@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Display
+Comment=
+Exec=./qt_actualizar_imagen
+Icon=/home/orangepi/SCRIPTS_ORANGE/ACTUALIZAR.png
+Path=/home/orangepi/qt
+Terminal=false
+StartupNotify=false
+Name[es_ES]=Actualizar IMAGEN
