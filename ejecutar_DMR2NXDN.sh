@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sed -i "6c Exec=mate-terminal -x sh cerrar_DMR2NXDN.sh" /home/orangepi/Desktop/Abrir_DMR2NXDN.desktop
-sed -i "7c Icon=/home/orangepi/SCRIPTS_ORANGE/DMR2NXDN_ON.png" /home/orangepi/Desktop/Abrir_DMR2NXDN.desktop
+sed -i "7c Icon=/home/orangepi/ORANGE/DMR2NXDN_ON.png" /home/orangepi/Desktop/Abrir_DMR2NXDN.desktop
 sed -i "10c Name[es_ES]=Cerrar DMR2NXDN" /home/orangepi/Desktop/Abrir_DMR2NXDN.desktop
 
 

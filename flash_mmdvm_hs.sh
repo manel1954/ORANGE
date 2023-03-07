@@ -96,7 +96,7 @@ clear
                         [sS]* ) echo ""
                         echo ""
                         cd /home/orangepi/MMDVM_HS/
-                        cp /home/orangepi/SCRIPTS_ORANGE/install_fw_librekit.sh /home/orangepi/MMDVM_HS/bin/
+                        cp /home/orangepi/ORANGE/install_fw_librekit.sh /home/orangepi/MMDVM_HS/bin/
                         cd /home/orangepi/MMDVM_HS/bin
                         sleep 2
                         sudo chmod 777 install_fw_librekit.sh

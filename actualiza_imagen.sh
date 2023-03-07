@@ -2,7 +2,7 @@
                         git pull 
                         sleep 3
                         cd /home/orangepi/
-                        sudo chmod 777 SCRIPTS_ORANGE
+                        sudo chmod 777 ORANGE
                         clear
                         cd /home/orangepi/AUTOSTART
                         git pull
@@ -15,7 +15,7 @@
                         
                         mkdir /home/orangepi/qt
                         
-                        cd /home/orangepi/SCRIPTS_ORANGE
+                        cd /home/orangepi/ORANGE
                         
                         cp qt* /home/orangepi/qt
 

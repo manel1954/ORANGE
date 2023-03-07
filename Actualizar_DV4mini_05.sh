@@ -2,7 +2,7 @@
 clear
 while true
 do
-SCRIPTS_version="SCRIPTS_ORANGE"
+SCRIPTS_version="ORANGE"
 #Colores
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"

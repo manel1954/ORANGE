@@ -46,7 +46,7 @@ clear
                         git pull 
                         sleep 3
                         cd /home/orangepi/
-                        sudo chmod 777 SCRIPTS_ORANGE
+                        sudo chmod 777 ORANGE
                         clear
                         cd /home/orangepi/AUTOSTART
                         git pull
@@ -74,7 +74,7 @@ clear
                         #cd /home/orangepi/MMDVMHost/Nextion_DB2OE
                         #sudo python nextion.py NX3224T024.tft /dev/ttyUSB0
                         #sleep 5
-                        cd /home/orangepi/SCRIPTS_ORANGE/
+                        cd /home/orangepi/ORANGE/
                         sudo sh grabar_nextion_05.sh
                         exit;
 		                break;;
@@ -131,7 +131,7 @@ clear
                         #cd /home/orangepi/MMDVMHost/Nextion_DB2OE
                         #sudo python nextion.py NX3224T024.tft /dev/ttyUSB0
                         #sleep 5
-                        cd /home/orangepi/SCRIPTS_ORANGE/
+                        cd /home/orangepi/ORANGE/
                         sudo sh menu_dcs018_06.sh
                         exit;
                         break;;
@@ -175,7 +175,7 @@ clear
                                 [sS]* ) echo ""
 
                                 #Coloca icono Abrir AMBE SERVER en el escritorio
-                                cp -R /home/orangepi/SCRIPTS_ORANGE/Desktop /home/orangepi/
+                                cp -R /home/orangepi/ORANGE/Desktop /home/orangepi/
                                 sudo chmod +x -R /home/orangepi/Desktop
                       
                                 echo ">>>>>>>>> RESTAURANDO ICONOS ESCRITORIO <<<<<<<<<"
@@ -229,20 +229,20 @@ clear
                                                 cp YSF2DMR.ini YSF2DMR.ini_copia_03
                                                 cp YSF2DMR.ini YSF2DMR.ini_copia_04
 
-                                                cd /home/orangepi/SCRIPTS_ORANGE
+                                                cd /home/orangepi/ORANGE
                                                 git pull
                                                 sleep 3
 
                                                 #Restaura los 2 iconos Abrir YSF2DMR y Editar YSF2DMR y aparecen en el escritorio
-                                                cd /home/orangepi/SCRIPTS_ORANGE
-                                                cp /home/orangepi/SCRIPTS_ORANGE/Desktop/Abrir_YSF2DMR.desktop /home/orangepi/Desktop
-                                                cp /home/orangepi/SCRIPTS_ORANGE/Desktop/Editar_YSF2DMR.desktop /home/orangepi/Desktop
+                                                cd /home/orangepi/ORANGE
+                                                cp /home/orangepi/ORANGE/Desktop/Abrir_YSF2DMR.desktop /home/orangepi/Desktop
+                                                cp /home/orangepi/ORANGE/Desktop/Editar_YSF2DMR.desktop /home/orangepi/Desktop
                                                 sudo chmod +x -R /home/orangepi/Desktop
 
 
 
                                                 ##Coloca icono Abrir AMBE SERVER en el escritorio
-                                                #cp -R /home/orangepi/SCRIPTS_ORANGE/Desktop /home/orangepi/
+                                                #cp -R /home/orangepi/ORANGE/Desktop /home/orangepi/
                                                 #sudo chmod +x -R /home/orangepi/Desktop
                       
                                                 exit;
@@ -268,10 +268,10 @@ clear
                         git pull
 
                         #Restaura los 2 iconos Abrir AMBE SERVER y Editar AMBE SERVER y aparecen en el escritorio
-                        cp /home/orangepi/SCRIPTS_ORANGE/Desktop/Abrir_ambe_server.desktop /home/orangepi/Desktop
-                        cp /home/orangepi/SCRIPTS_ORANGE/Desktop/Editar_ambe_server.desktop /home/orangepi/Desktop
+                        cp /home/orangepi/ORANGE/Desktop/Abrir_ambe_server.desktop /home/orangepi/Desktop
+                        cp /home/orangepi/ORANGE/Desktop/Editar_ambe_server.desktop /home/orangepi/Desktop
 
-                        cp /home/orangepi/SCRIPTS_ORANGE/ambe_server.ini /home/orangepi/
+                        cp /home/orangepi/ORANGE/ambe_server.ini /home/orangepi/
 
                         sudo chmod +x -R /home/orangepi/Desktop
 
@@ -280,7 +280,7 @@ clear
                         then
                         echo ""
                         else
-                        cp /home/orangepi/SCRIPTS_ORANGE/status.ini /home/orangepi/
+                        cp /home/orangepi/ORANGE/status.ini /home/orangepi/
                         fi
                         #================================
 
@@ -362,9 +362,9 @@ clear
                         clear
 
                         #Restaura los 2 iconos Abrir Abrir_DMR2YSF y Editar Editar_DMR2YSF y aparecen en el escritorio
-                        cd /home/orangepi/SCRIPTS_ORANGE
-                        cp /home/orangepi/SCRIPTS_ORANGE/Desktop/Abrir_DMR2YSF.desktop /home/orangepi/Desktop
-                        cp /home/orangepi/SCRIPTS_ORANGE/Desktop/Editar_MMDVMDMR2YSF.desktop /home/orangepi/Desktop
+                        cd /home/orangepi/ORANGE
+                        cp /home/orangepi/ORANGE/Desktop/Abrir_DMR2YSF.desktop /home/orangepi/Desktop
+                        cp /home/orangepi/ORANGE/Desktop/Editar_MMDVMDMR2YSF.desktop /home/orangepi/Desktop
                         
                         sudo chmod +x -R /home/orangepi/Desktop
                      
@@ -443,9 +443,9 @@ if [ $HostsFile2 = $comprueba ]
                         clear
 
                         #Restaura los 2 iconos Abrir Abrir_DMR2NXDN y Editar Editar_DMR2NXDN y aparecen en el escritorio
-                        cd /home/orangepi/SCRIPTS_ORANGE
-                        cp /home/orangepi/SCRIPTS_ORANGE/Desktop/Abrir_DMR2NXDN.desktop /home/orangepi/Desktop
-                        cp /home/orangepi/SCRIPTS_ORANGE/Desktop/Editar_MMDVMDMR2NXDN.desktop /home/orangepi/Desktop
+                        cd /home/orangepi/ORANGE
+                        cp /home/orangepi/ORANGE/Desktop/Abrir_DMR2NXDN.desktop /home/orangepi/Desktop
+                        cp /home/orangepi/ORANGE/Desktop/Editar_MMDVMDMR2NXDN.desktop /home/orangepi/Desktop
                         
                         sudo chmod +x -R /home/orangepi/Desktop
                      
@@ -467,7 +467,7 @@ clear
                         git pull 
                         sleep 3
                         cd /home/orangepi/
-                        sudo chmod 777 SCRIPTS_ORANGE
+                        sudo chmod 777 ORANGE
                         clear
                         cd /home/orangepi/AUTOSTART
                         git pull
@@ -480,7 +480,7 @@ clear
                         
                         mkdir /home/orangepi/qt
                         
-                        cd /home/orangepi/SCRIPTS_ORANGE
+                        cd /home/orangepi/ORANGE
                         
                         cp qt* /home/orangepi/qt
 

@@ -4,7 +4,7 @@ Type=Application
 Name=Editar Libre
 Comment=
 Exec=mate-terminal --geometry=80x47 -x sh editar_MMDVMLIBRE_05.sh
-Icon=/home/orangepi/SCRIPTS_ORANGE/EDITAR_LIBRE.png
-Path=/home/orangepi/SCRIPTS_ORANGE
+Icon=/home/orangepi/ORANGE/EDITAR_LIBRE.png
+Path=/home/orangepi/ORANGE
 Terminal=false
 StartupNotify=false

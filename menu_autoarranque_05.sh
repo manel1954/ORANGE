@@ -1079,9 +1079,9 @@ clear
                         case $ejecutar1 in
                         [sS]* ) echo ""
                         echo ">>>>>>>>> RESTABLECIENDO EL AUTOARRANQUE POR DEFECTO/home/orangepi/   >>>>>"
-                        cd /home/orangepi/SCRIPTS_ORANGE
+                        cd /home/orangepi/ORANGE
                         git pull
-                        cp -f /home/orangepi/SCRIPTS_ORANGE/autoarranque.ini /home/orangepi/
+                        cp -f /home/orangepi/ORANGE/autoarranque.ini /home/orangepi/
                         exit;
                         break;;
                         [nN]* ) echo ""

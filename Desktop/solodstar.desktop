@@ -4,7 +4,7 @@ Type=Application
 Name=Editar solo D-STAR
 Comment=
 Exec=mate-terminal --geometry=80x41 -x sh editar_MMDVMDSTAR_05.sh
-Icon=/home/orangepi/SCRIPTS_ORANGE/SOLO_D-STAR.png
-Path=/home/orangepi/SCRIPTS_ORANGE
+Icon=/home/orangepi/ORANGE/SOLO_D-STAR.png
+Path=/home/orangepi/ORANGE
 Terminal=false
 StartupNotify=false

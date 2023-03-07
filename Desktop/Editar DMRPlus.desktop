@@ -4,8 +4,8 @@ Type=Application
 Name=Editar DMRPlus
 Comment=
 Exec=mate-terminal --geometry=80x47 -x sh editar_MMDVMPLUS_05.sh
-Icon=/home/orangepi/SCRIPTS_ORANGE/DMRPLUS_EDITOR.png
-Path=/home/orangepi/SCRIPTS_ORANGE
+Icon=/home/orangepi/ORANGE/DMRPLUS_EDITOR.png
+Path=/home/orangepi/ORANGE
 Terminal=false
 StartupNotify=false
 Name[es_ES]=Editar DMR+

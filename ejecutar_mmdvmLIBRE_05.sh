@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sed -i "6c Exec=mate-terminal -x sh cerrar_mmdvmLIBRE_05.sh" /home/orangepi/Desktop/Libre.desktop
-sed -i "7c Icon=/home/orangepi/SCRIPTS_ORANGE/LIBRE_ON.png" /home/orangepi/Desktop/Libre.desktop
+sed -i "7c Icon=/home/orangepi/ORANGE/LIBRE_ON.png" /home/orangepi/Desktop/Libre.desktop
 sed -i "10c Name[es_ES]=Cerrar LIBRE" /home/orangepi/Desktop/Libre.desktop
 
 sed -i "10c MMDVMLIBRE=ON" /home/orangepi/status.ini

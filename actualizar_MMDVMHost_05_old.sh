@@ -56,7 +56,7 @@ clear
                     then
                     echo "El fichero ya existe"
                     else
-                    sudo cp /home/orangepi/SCRIPTS_ORANGE/info.ini /home/orangepi/Downloads
+                    sudo cp /home/orangepi/ORANGE/info.ini /home/orangepi/Downloads
                     fi
                     #===============================================
 
@@ -73,7 +73,7 @@ clear
                     #=================================================
 
                     # Rutina solo para el LIBRE ======================
-                    cd /home/orangepi/SCRIPTS_ORANGE
+                    cd /home/orangepi/ORANGE
                     cp MMDVMHostLIBRE /home/orangepi/MMDVMHost
                     cp MMDVMLIBRE.ini /home/orangepi/MMDVMHost
                     cd /home/orangepi/MMDVMHost

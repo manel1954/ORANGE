@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sed -i "6c Exec=mate-terminal -x sh cerrar_svxlink_05.sh" /home/orangepi/Desktop/Abrir_SVXLink.desktop
-sed -i "7c Icon=/home/orangepi/SCRIPTS_ORANGE/SVXLINK_ON.png" /home/orangepi/Desktop/Abrir_SVXLink.desktop
+sed -i "7c Icon=/home/orangepi/ORANGE/SVXLINK_ON.png" /home/orangepi/Desktop/Abrir_SVXLink.desktop
 sed -i "4c Name[es_ES]=Cerrar SVXLINK" /home/orangepi/Desktop/Abrir_SVXLink.desktop
 
 sed -i "8c SVXLINK=ON" /home/orangepi/status.ini
@@ -12,8 +12,8 @@ sed -i "8c SVXLINK=ON" /home/orangepi/status.ini
     #Name=YSFGateway
     #Comment=
     #Exec=mate-terminal -x sh ejecutar_ysf_05.sh
-    #Icon=/home/orangepi/SCRIPTS_ORANGE/C4FM.png
-    #Path=/home/orangepi/SCRIPTS_ORANGE
+    #Icon=/home/orangepi/ORANGE/C4FM.png
+    #Path=/home/orangepi/ORANGE
     #Terminal=false
     #StartupNotify=false
     #Name[es_ES]=Abrir YSF
