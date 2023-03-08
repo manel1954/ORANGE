@@ -1,8 +1,6 @@
 #!/bin/bash
-#cd /home/orangepi/qt
-#./qt_notas_version
-cd /home/orangepi/ORANGE
-su root -c 'ImagenActualizada.exe'
+cd /home/orangepi/qt
+./qt_notas_version
 #echo "\33[1;32m   ************************************************************************************"
 #echo "   * \33[1;31m                      NOTAS DE LA VERSIÓN 02.07.05\33[1;32m                               *"
 #echo "   ************************************************************************************"
