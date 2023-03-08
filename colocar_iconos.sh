@@ -18,4 +18,4 @@ sudo cp /home/orangepi/ORANGE/Desktop/*.* /home/orangepi/Desktop
 sudo chmod 777 -R /home/orangepi/Desktop
 
 cp /home/orangepi/icons.screen0-1904x1021.rc /home/orangepi/.config/xfce4/desktop
-xfdesktop --reload                              
+xfdesktop -R                           
