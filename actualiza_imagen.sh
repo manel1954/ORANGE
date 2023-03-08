@@ -1,4 +1,5 @@
 #!/bin/bash	                
+                        sh /home/orangepi/ORANGE/ejecutar_ImagenActualizada.sh
                         git pull 
                         sleep 3
                         cd /home/orangepi/
@@ -8,7 +9,7 @@
                         git pull
 
 
-                        sh /home/orangepi/ORANGE/ejecutar_ImagenActualizada.sh
+                        
 
 
                         sudo usermod -a -G dialout orangepi
