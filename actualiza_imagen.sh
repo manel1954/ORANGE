@@ -8,7 +8,7 @@
                         git pull
 
 
-sh /home/orangepi/ORANGE/sh ejecutar_ImagenActualizada.sh
+                        sh /home/orangepi/ORANGE/ejecutar_ImagenActualizada.sh
 
 
                         sudo usermod -a -G dialout orangepi
