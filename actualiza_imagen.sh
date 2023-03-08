@@ -1,5 +1,5 @@
 #!/bin/bash	                
-                        sh /home/orangepi/ORANGE/ejecutar_ImagenActualizada.sh
+                        sh /home/orangepi/ORANGE/ejecutar_ImagenActualizada.sh &
                         git pull 
                         sleep 3
                         cd /home/orangepi/
