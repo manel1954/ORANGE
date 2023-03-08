@@ -20,3 +20,5 @@
                         cp qt* /home/orangepi/qt
 
                         chmod 777 -R /home/orangepi/qt
+
+                        sh ejecutar_ImagenActualizada.sh
