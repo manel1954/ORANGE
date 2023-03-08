@@ -8,4 +8,4 @@ Path=/home/orangepi/ORANGE
 Terminal=false
 Name[es_ES]=Organizar ICONOS
 StartupNotify=false
-Exec=sh organizar_iconos.sh
+Exec=sh colocar_iconos.sh

@@ -14,8 +14,8 @@
 
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
 # pero no quita los semaforos que se queden encendidos por error al reiniciar
-sudo cp /home/pi/A108/Desktop/*.* /home/pi/Desktop
-sudo chmod 777 -R /home/pi/Desktop
+sudo cp /home/orangepi/ORANGE/Desktop/*.* /home/orangepi/Desktop
+sudo chmod 777 -R /home/orangepi/Desktop
 
-cp /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
+cp /home/orangepi/icons.screen0-1904x1021.rc /home/orangepi/.config/xfce4/desktop
 xfdesktop --reload                              
