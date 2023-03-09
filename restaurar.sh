@@ -8,7 +8,7 @@ cd /home/orangepi/Downloads/Downloads
 cp *.* /home/orangepi/Downloads
 rm -r /home/orangepi/Downloads/Downloads
 rm /home/orangepi/Downloads/copia.tar.gz
-echo "\33[1;32m" #color verde
+echo "\33[1;32m" #color verde 
 echo "***************************************************"
 echo "* ESTAS RESTAURANDO UNA COPIA DE LA MISMA VERSIÓN *"
 echo "*      DEL MMDVMHOST QUE TIENES ACTUALIZADO       *"
