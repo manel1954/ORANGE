@@ -46,7 +46,7 @@
             sudo cp /usr/local/etc/opendv/ircddbgateway /home/orangepi/Downloads
             sudo cp /usr/local/etc/opendv/dstarrepeater /home/orangepi/Downloads
 
-            cd /home/pi
+            cd /home/orangepi
             sudo cp info_panel_control.ini /home/orangepi/Downloads
 
 #cd /var/www/html/upload/files
