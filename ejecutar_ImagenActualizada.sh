@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /home/orangepi/ORANGE
-su orangepi -c 'mono ImagenActualizada.exe'
+su root -c 'mono ImagenActualizada.exe'
