@@ -5,7 +5,7 @@
 cp /home/orangepi/Desktop/*.desktop /home/orangepi
 cp /home/orangepi/ORANGE/Desktop/*.desktop /home/orangepi/Desktop
 #
-cp /home/orangepi/icons.screen0-1904x1021.rc /home/orangepi/.config/xfce4/desktop
+#cp /home/orangepi/icons.screen0-1904x1021.rc /home/orangepi/.config/xfce4/desktop
 xfdesktop --reload
 #
 cp /home/orangepi/*.desktop /home/orangepi/Desktop 
