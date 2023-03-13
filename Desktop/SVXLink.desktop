@@ -5,6 +5,6 @@ Name=Editar Svxlink
 Comment=
 Exec=./qt_editor_svxlink
 Icon=/home/orangepi/ORANGE/DMRPLUS_EDITOR.png
-Path=/home/orangepi/ORANGE
+Path=/home/orangepi/qt
 Terminal=false
 StartupNotify=false
