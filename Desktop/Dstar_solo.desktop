@@ -7,5 +7,5 @@ Exec=sh ejecutar_solodstar_04.sh
 Icon=/home/orangepi/ORANGE/SOLO_DSTAR.png
 Terminal=false
 StartupNotify=false
-Name[es_ES]=Abrir D-STAR Repeaterx
+Name[es_ES]=Abrir D-STAR Repeater
 Path=/home/orangepi/ORANGE
