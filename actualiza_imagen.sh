@@ -8,11 +8,6 @@
                         cd /home/orangepi/AUTOSTART
                         git pull
 
-                        cd /home/orangepi
-                        sudo chmod 777 -R AUTOSTART
-                        
-
-
                         sudo usermod -a -G dialout orangepi
                         sudo usermod -a -G uucp orangepi
                         cd /home/orangepi/
