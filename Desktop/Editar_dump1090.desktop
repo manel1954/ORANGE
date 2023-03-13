@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=EditarBlueDV
+Name=Editar Dump1090
 Comment=
 Exec=./qt_editor_dump1090
-Icon=/home/orangepi/ORANGE/EDITAR_BLUEDV.png
+Icon=/home/orangepi/ORANGE/EDITAR_DUMP1090.png
 Path=/home/orangepi/qt
 Terminal=false
 StartupNotify=false
