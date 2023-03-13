@@ -240,7 +240,6 @@ var2=`grep "NXDN" /home/orangepi/autoarranque.ini`
 
 
 echo "\33[1;33m"
-
 echo -n "\33[1;36m   201)\33[1;33m  Poner ircDDB en el autoarranque       - "
 dstar=`grep "D-STAR" /home/orangepi/autoarranque.ini`
 dstar=`expr substr $dstar 8 3`
@@ -252,6 +251,9 @@ echo "\33[1;31m"
 fi
 dstar=`grep "D-STAR" /home/orangepi/autoarranque.ini`
 
+
+
+
 echo -n "\33[1;36m   202)\33[1;33m  Poner dump1090 en el autoarranque       - "
 dump1090=`grep "DUMP1090" /home/orangepi/autoarranque.ini`
 dump1090=`expr substr $dump1090 8 3`
@@ -262,6 +264,10 @@ else
 echo "\33[1;31m"
 fi
 dump1090=`grep "DUMP1090" /home/orangepi/autoarranque.ini`
+
+
+
+
 
 echo -n "\33[1;36m   203)\33[1;33m  Poner YSF en el autoarranque          - "
 YSF=`grep "C4F" /home/orangepi/autoarranque.ini`
