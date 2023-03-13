@@ -20,16 +20,16 @@ echo "\33[1;31m"
 fi
 dstar=`grep "D-STAR" /home/orangepi/autoarranque.ini`
 
-echo -n "\33[1;36m   102)\33[1;37m  Quitar BlueDV del autoarranque        - \33[1;32m"
-bluedv=`grep "BlueDV" /home/orangepi/autoarranque.ini`
-bluedv=`expr substr $bluedv 8 3`
-if [ $bluedv = "ON" ]
+echo -n "\33[1;36m   102)\33[1;37m  Quitar DUMP1090 del autoarranque        - \33[1;32m"
+dump1090=`grep "DUMP1090" /home/orangepi/autoarranque.ini`
+dump1090=`expr substr $dump1090 10 3`
+if [ $dump1090 = "ON" ]
 then
-echo "\33[1;32m$bluedv"
+echo "\33[1;32m$dump1090"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "BlueDV" /home/orangepi/autoarranque.ini`
+dump1090=`grep "DUMP1090" /home/orangepi/autoarranque.ini`
 
 echo -n "\33[1;36m   103)\33[1;37m  Quitar YSF del autoarranque           - "
 YSF=`grep "C4F" /home/orangepi/autoarranque.ini`
@@ -74,10 +74,6 @@ else
 echo "\33[1;31m"
 fi
 bluedv=`grep "MMDVMPLUS" /home/orangepi/autoarranque.ini`
-
-
-
-
 
 echo -n "\33[1;36m   107)\33[1;37m  Quitar LIBRE del autoarranque         - "
 MMDVMLIBRE=`grep "MMDVMLIBRE" /home/orangepi/autoarranque.ini`
@@ -256,16 +252,16 @@ echo "\33[1;31m"
 fi
 dstar=`grep "D-STAR" /home/orangepi/autoarranque.ini`
 
-echo -n "\33[1;36m   202)\33[1;33m  Poner BlueDV en el autoarranque       - "
-bluedv=`grep "BlueDV" /home/orangepi/autoarranque.ini`
-bluedv=`expr substr $bluedv 8 3`
-if [ $bluedv = "OFF" ]
+echo -n "\33[1;36m   202)\33[1;33m  Poner dump1090 en el autoarranque       - "
+dump1090=`grep "DUMP1090" /home/orangepi/autoarranque.ini`
+dump1090=`expr substr $dump1090 8 3`
+if [ $dump1090 = "OFF" ]
 then
-echo "\33[1;31m$bluedv"
+echo "\33[1;31m$dump1090"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "BlueDV" /home/orangepi/autoarranque.ini`
+dump1090=`grep "DUMP1090" /home/orangepi/autoarranque.ini`
 
 echo -n "\33[1;36m   203)\33[1;33m  Poner YSF en el autoarranque          - "
 YSF=`grep "C4F" /home/orangepi/autoarranque.ini`
@@ -492,11 +488,11 @@ clear
 	                     actualizar=S
 		                   case $actualizar in
 			                 [sS]* ) echo ""
-			                 echo "Quitando BlueDV del autoarranque >>>>>"
+			                 echo "Quitando DUMP1090 del autoarranque >>>>>"
                        sleep 2
                        cd /home/orangepi/.config/autostart
-                       mv BLUEDV.desktop /home/orangepi/AUTOSTART
-			                 sed -i "2c BlueDV=OFF" /home/orangepi/autoarranque.ini
+                       mv DUMP1090.desktop /home/orangepi/AUTOSTART
+			                 sed -i "2c DUMP1090=OFF" /home/orangepi/autoarranque.ini
 			                 break;;
 			                 [nN]* ) echo ""
 			                 break;;
@@ -791,11 +787,11 @@ clear
 	                                          actualizar=S
 		                                        case $actualizar in
 			                                      [sS]* ) echo ""                          
-                                            echo "Poniendo BlueDV en el autoarranque >>>>>"
+                                            echo "Poniendo DUMP1090 en el autoarranque >>>>>"
                                             sleep 2
                                             cd /home/orangepi/AUTOSTART
-                                            mv BLUEDV.desktop /home/orangepi/.config/autostart/
-                                            sed -i "2c BlueDV=ON" /home/orangepi/autoarranque.ini
+                                            mv DUMP1090.desktop /home/orangepi/.config/autostart/
+                                            sed -i "2c DUMP1090=ON" /home/orangepi/autoarranque.ini
 			                                      break;;
 			                                      [nN]* ) echo ""
 			                                      break;;
