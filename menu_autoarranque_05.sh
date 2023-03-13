@@ -20,7 +20,7 @@ echo "\33[1;31m"
 fi
 dstar=`grep "D-STAR" /home/orangepi/autoarranque.ini`
 
-echo -n "\33[1;36m   102)\33[1;37m  Quitar DUMP1090 del autoarranque        - \33[1;32m"
+echo -n "\33[1;36m   102)\33[1;37m  Quitar DUMP1090 del autoarranque       - \33[1;32m"
 dump1090=`grep "DUMP1090" /home/orangepi/autoarranque.ini`
 dump1090=`expr substr $dump1090 10 3`
 if [ $dump1090 = "ON" ]
@@ -254,7 +254,7 @@ dstar=`grep "D-STAR" /home/orangepi/autoarranque.ini`
 
 
 
-echo -n "\33[1;36m   202)\33[1;33m  Poner dump1090 en el autoarranque       - "
+echo -n "\33[1;36m   202)\33[1;33m  Poner dump1090 en el autoarranque      - "
 dump1090=`grep "DUMP1090" /home/orangepi/autoarranque.ini`
 dump1090=`expr substr $dump1090 10 3`
 if [ $dump1090 = "OFF" ]
