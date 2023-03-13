@@ -173,54 +173,6 @@ exit;
 break;;
 esac
 done;;
-8000) echo ""
-while true
-do
-clear
-
-                                                ejecutar1=S
-                                                case $ejecutar1 in
-                                                [sS]* ) echo ""
-                                                echo ">>>>>>>>> INSTALANDO YSF2DMR >>>>>>>>"
-                                                cd /home/orangepi/
-                                                sudo rm -R YSF2DMR
-                                                git clone http://github.com/juribeparada/YSF2DMR
-                                                cd /home/orangepi/YSF2DMR
-                                                make clean
-                                                make
-                                                clear
-
-                                                cp YSF2DMR.ini YSF2DMR.ini_copia_01
-                                                cp YSF2DMR.ini YSF2DMR.ini_copia_02
-                                                cp YSF2DMR.ini YSF2DMR.ini_copia_03
-                                                cp YSF2DMR.ini YSF2DMR.ini_copia_04
-
-                                                cd /home/orangepi/ORANGE
-                                                git pull
-                                                sleep 3
-
-                                                #Restaura los 2 iconos Abrir YSF2DMR y Editar YSF2DMR y aparecen en el escritorio
-                                                cd /home/orangepi/ORANGE
-                                                cp /home/orangepi/ORANGE/Desktop/Abrir_YSF2DMR.desktop /home/orangepi/Desktop
-                                                cp /home/orangepi/ORANGE/Desktop/Editar_YSF2DMR.desktop /home/orangepi/Desktop
-                                                sudo chmod +x -R /home/orangepi/Desktop
-
-
-
-                                                ##Coloca icono Abrir AMBE SERVER en el escritorio
-                                                #cp -R /home/orangepi/ORANGE/Desktop /home/orangepi/
-                                                #sudo chmod +x -R /home/orangepi/Desktop
-                      
-                                                exit;
-                                                break;;
-                                                [nN]* ) echo ""
-                                                clear
-                                                exit;
-                                                break;;
-esac
-done;;
-
-
 1) echo ""
 while true
 do
