@@ -4,7 +4,7 @@ Type=Application
 Name=Editar Radio
 Comment=
 Exec=mate-terminal --geometry=80x47 -x sh editar_MMDVM_05.sh
-Icon=/home/orangepi/ORANGE/EDITAR_BLUEDV.png
+Icon=/home/orangepi/ORANGE/EDITAR_RADIO.png
 Path=/home/orangepi/ORANGE
 Terminal=false
 StartupNotify=false
