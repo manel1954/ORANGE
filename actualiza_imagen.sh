@@ -3,7 +3,6 @@
                         git pull 
                         sleep 3
                         cd /home/orangepi/
-                        #sudo chmod 777 -R ORANGE
                         clear
                         cd /home/orangepi/AUTOSTART
                         git pull
