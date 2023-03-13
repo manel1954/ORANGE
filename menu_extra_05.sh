@@ -19,10 +19,7 @@ echo "\33[1;36m   5)\33[1;37m CONEXIONES DVRPTR DCS018"
 echo "\33[1;36m   6)\33[1;33m INSTALAR ANYDESK (Aplicación escritorio remoto)"
 echo "\33[1;36m   7)\33[1;37m RESTAURAR ICONOS DEL ESCRITORIO"
 echo "\33[1;36m   8)${VERDE} MENÚ ACTUALIZAR MMDVM_HS (Pincho Low Cost)"
-echo "\33[1;36m   9)${AMARILLO} INSTALAR AMBE SERVER"
-echo "\33[1;36m  10)${AMARILLO} INSTALAR DMR2YSF"
-echo "\33[1;36m  11)${AMARILLO} INSTALAR DMR2NXDN"
-echo "\33[1;36m  12)${AMARILLO} ACTUALIZAR LISTA DE REFLECTORES D-STAR (DV4MINI-IRCDDB)"
+echo "\33[1;36m   9)${AMARILLO} ACTUALIZAR LISTA DE REFLECTORES D-STAR (DV4MINI-IRCDDB)"
 echo ""
 echo "\33[1;36m   0)\33[1;34m Salir del script \33[1;31m OJO!! no salir con ctrl+c ni con la x"
 echo ""
@@ -222,209 +219,8 @@ clear
                                                 break;;
 esac
 done;;
-9) echo ""
-while true
-do
-clear
-                        ejecutar1=S
-                        case $ejecutar1 in
-                        [sS]* ) echo ""
-                        echo ">>>>>>>>> INSTALANDO AMBE SERVER >>>>>>>>"
 
 
-                        # RECOGE LAS APLICACIONES AL INICIO QUE SE HAGAN NUEVAS
-                        cd /home/orangepi/AUTOSTART
-                        git pull
-
-                        #Restaura los 2 iconos Abrir AMBE SERVER y Editar AMBE SERVER y aparecen en el escritorio
-                        cp /home/orangepi/ORANGE/Desktop/Abrir_ambe_server.desktop /home/orangepi/Desktop
-                        cp /home/orangepi/ORANGE/Desktop/Editar_ambe_server.desktop /home/orangepi/Desktop
-
-                        cp /home/orangepi/ORANGE/ambe_server.ini /home/orangepi/
-
-                        sudo chmod +x -R /home/orangepi/Desktop
-
-                        #comprueba si el ficgero existe
-                        if [ -f /home/orangepi/status.ini ];
-                        then
-                        echo ""
-                        else
-                        cp /home/orangepi/ORANGE/status.ini /home/orangepi/
-                        fi
-                        #================================
-
-                        #comprueba si el ficgero existe
-                        if [ -d /home/orangepi/AMBEServer ];
-                        then
-                        sudo rm -R /home/orangepi/AMBEServer
-                        else
-                        echo ""
-                        fi
-                        #================================
-                        cd /home/orangepi/
-                        git clone http://github.com/ea4aoj/AMBEServer
-                        cd /home/orangepi/AMBEServer
-                        make 
-
-                        #Pone en el fichero autoarranque.ini el AMBE_SERVER a OFF
-                        sed -i "14c AMBE_SERVER=OFF" /home/orangepi/autoarranque.ini
-                        break;;
-                        [nN]* ) echo ""
-clear
-exit;
-break;;
-esac
-done;;
-10) echo ""
-while true
-do
-clear
-
-                        #comprueba si el fichero existe
-                        if [ -d /home/orangepi/DMR2YSF ];
-                        then
-                        clear
-                        echo "${BLANCO}"
-                        echo "*******************************************"
-                        echo "*       YA TIENES INSTALADO DMR2YSF       *"
-                        echo "*******************************************"
-                        sleep 2
-                        clear
-                        echo "${AMARILLO}"
-                        echo "*******************************************"
-                        echo "*       YA TIENES INSTALADO DMR2YSF       *"
-                        echo "*******************************************"
-                        sleep 2
-                        clear
-                        echo "${VERDE}"
-                        echo "*******************************************"
-                        echo "*       YA TIENES INSTALADO DMR2YSF       *"
-                        echo "*******************************************"
-                        sleep 5
-                        instalarsi=N
-                       
-                        else
-                        instalarsi=S
-                        fi
-                        #================================
-
-                                        case $instalarsi in
-                                                [sS]* ) echo ""
-                                                echo "${ROJO}"
-                        echo "*******************************************"
-                        echo "*         INSTALANDO DMR2YSF             *"
-                        echo "*******************************************"
-                        sleep 2
-                        echo "${CIAN}"
-                        cd /home/orangepi/MMDVMHost
-                        cp MMDVM.ini MMDVMDMR2YSF.ini
-
-                        cd /home/orangepi/
-                        sudo rm -R /home/orangepi/MMDVM_CM
-                        sudo rm -R /home/orangepi/DMR2YSF
-                        git clone http://github.com/juribeparada/MMDVM_CM
-                        mkdir DMR2YSF
-                        cp /home/orangepi/MMDVM_CM/DMR2YSF/* /home/orangepi/DMR2YSF/
-                        cd /home/orangepi/DMR2YSF/    
-                        make clean
-                        make
-                        clear
-
-                        #Restaura los 2 iconos Abrir Abrir_DMR2YSF y Editar Editar_DMR2YSF y aparecen en el escritorio
-                        cd /home/orangepi/ORANGE
-                        cp /home/orangepi/ORANGE/Desktop/Abrir_DMR2YSF.desktop /home/orangepi/Desktop
-                        cp /home/orangepi/ORANGE/Desktop/Editar_MMDVMDMR2YSF.desktop /home/orangepi/Desktop
-                        
-                        sudo chmod +x -R /home/orangepi/Desktop
-                     
-                                break;;
-                                [nN]* ) echo ""
-                                clear
-                                exit;
-                                break;;
-esac
-done;;
-11) echo ""
-while true
-do
-clear
-# Comprueba si tienes la versión con la linea HostsFile2=./private/NXDNHosts.txt
-var=`grep -n -m 1 '\<HostsFile2\>' /home/orangepi/NXDNClients/NXDNGateway/NXDNGateway.ini`
-buscar=":"
-largo_linea=`expr index $var $buscar`
-largo_linea=`expr $largo_linea - 1`
-numero_linea=`expr substr $var 1 $largo_linea`
-HostsFile2=$(awk "NR==$numero_linea" /home/orangepi/NXDNClients/NXDNGateway/NXDNGateway.ini)
-comprueba="HostsFile2=./private/NXDNHosts.txt"
-if [ $HostsFile2 = $comprueba ]
-                  
-                        then # YA TIENES INSTALADA LA ÚLTIMA VERSIÓN
-                        clear
-                        echo "${BLANCO}"
-                        echo "*************************************************"
-                        echo "*       YA TIENES INSTALADA LA ÚLTIMA VERSIÓN    *"
-                        echo "**************************************************"
-                        sleep 2
-                        clear
-                        echo "${AMARILLO}"
-                        echo "*************************************************"
-                        echo "*       YA TIENES INSTALADA LA ÚLTIMA VERSIÓN    *"
-                        echo "**************************************************"
-                        sleep 2
-                        clear
-                        echo "${VERDE}"
-                        echo "*************************************************"
-                        echo "*       YA TIENES INSTALADA LA ÚLTIMA VERSIÓN    *"
-                        echo "**************************************************"
-                        sleep 5
-
-                        instalarsi=N
-                       
-                        else # INSTALA DE NUEVO EL DMR2NXDN
-
-                        instalarsi=S
-                        fi
-                        #================================
-
-                                case $instalarsi in
-                                [sS]* ) echo ""
-                                echo "${ROJO}"
-                        echo "*******************************************"
-                        echo "*         INSTALANDO DMR2NXDN             *"
-                        echo "*******************************************"
-                        sleep 2
-                                echo "${CIAN}"
-
-                                cd /home/orangepi/MMDVMHost
-                        cp MMDVM.ini MMDVMDMR2NXDN.ini
-
-                        cd /home/orangepi/
-                        sudo rm -R /home/orangepi/MMDVM_CM
-                        sudo rm -R /home/orangepi/DMR2NXDN
-                        git clone http://github.com/juribeparada/MMDVM_CM
-                        mkdir DMR2NXDN
-                        cp /home/orangepi/MMDVM_CM/DMR2NXDN/* /home/orangepi/DMR2NXDN/
-                        cd /home/orangepi/DMR2NXDN/    
-                        make clean
-                        make
-                        clear
-                        sudo chmod 777 -R /home/orangepi/NXDNClients/NXDNGateway
-                        clear
-
-                        #Restaura los 2 iconos Abrir Abrir_DMR2NXDN y Editar Editar_DMR2NXDN y aparecen en el escritorio
-                        cd /home/orangepi/ORANGE
-                        cp /home/orangepi/ORANGE/Desktop/Abrir_DMR2NXDN.desktop /home/orangepi/Desktop
-                        cp /home/orangepi/ORANGE/Desktop/Editar_MMDVMDMR2NXDN.desktop /home/orangepi/Desktop
-                        
-                        sudo chmod +x -R /home/orangepi/Desktop
-                     
-                                break;;
-                                [nN]* ) echo ""
-                                clear
-                                exit;
-                                break;;
-esac
-done;;
 1) echo ""
 while true
 do
@@ -461,7 +257,7 @@ exit;
 break;;
 esac
 done;;
-12) echo ""
+9) echo ""
 while true
 do
 clear
