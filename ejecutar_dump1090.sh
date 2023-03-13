@@ -1,7 +1,7 @@
 #!/bin/bash
-sed -i "6c Exec=sh cerrar_dump1090.sh" /home/orangepi/Desktop/BlueDV.desktop
-sed -i "7c Icon=/home/orangepi/ORANGE/ICONO_AVION_ON.png" /home/orangepi/Desktop/BlueDV.desktop
-sed -i "10c Name[es_ES]=Cerrar Dump1090" /home/orangepi/Desktop/BlueDV.desktop
+sed -i "6c Exec=sh cerrar_dump1090.sh" /home/orangepi/Desktop/dump1090.desktop
+sed -i "7c Icon=/home/orangepi/ORANGE/ICONO_AVION_ON.png" /home/orangepi/Desktop/dump1090.desktop
+sed -i "10c Name[es_ES]=Cerrar Dump1090" /home/orangepi/Desktop/dump1090.desktop
 
 stick=$(awk "NR==40" /home/orangepi/status.ini)
 raw=$(awk "NR==42" /home/orangepi/status.ini)
@@ -19,6 +19,6 @@ else
 xterm -geometry 88x51+22+0 -bg black -fg green -fa ‘verdana’ -fs 9x -T DUMP1090 -e sudo /home/orangepi/dump1090/dump1090 --net --interactive --net-ro-port $raw --net-bo-port $beast --ppm $ppm --net-http-port $http
 fi
 
-sed -i "6c Exec=sh ejecutar_dump1090.sh" /home/orangepi/Desktop/BlueDV.desktop
-sed -i "7c Icon=/home/orangepi/ORANGE/ICONO_AVION_OFF.png" /home/orangepi/Desktop/BlueDV.desktop
-sed -i "10c Name[es_ES]=Abrir Dump1090" /home/orangepi/Desktop/BlueDV.desktop
+sed -i "6c Exec=sh ejecutar_dump1090.sh" /home/orangepi/Desktop/dump1090.desktop
+sed -i "7c Icon=/home/orangepi/ORANGE/ICONO_AVION_OFF.png" /home/orangepi/Desktop/dump1090.desktop
+sed -i "10c Name[es_ES]=Abrir Dump1090" /home/orangepi/Desktop/dump1090.desktop
