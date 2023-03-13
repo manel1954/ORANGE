@@ -456,9 +456,9 @@ echo "\33[1;31m"
 fi
 trans=`grep "NXDN" /home/orangepi/autoarranque.ini`
 #==================================================================================
-echo "\33[0m "
-echo "\33[1;36m  27)\33[1;32m ***  REESTABLECER AUTOARRANQUES  ***"
-echo ""
+#echo "\33[0m "
+#echo "\33[1;36m  27)\33[1;32m ***  REESTABLECER AUTOARRANQUES  ***"
+#echo ""
 
 echo "\33[1;36m  28)\33[1;31m *** REINICIAR LA ORANGE PI ***"
 echo ""
