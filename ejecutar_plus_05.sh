@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i "6c Exec=mate-terminal -x sh cerrar_plus_05.sh" /home/orangepi/Desktop/DMRPLUS.desktop
+sed -i "6c sh cerrar_plus_05.sh" /home/orangepi/Desktop/DMRPLUS.desktop
 sed -i "7c Icon=/home/orangepi/ORANGE/DMRPLUS_ON.png" /home/orangepi/Desktop/DMRPLUS.desktop
 sed -i "10c Name[es_ES]=Cerrar DMR+" /home/orangepi/Desktop/DMRPLUS.desktop
 
