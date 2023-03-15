@@ -8,9 +8,9 @@ sed -i "10c Name[es_ES]=Cerrar DMR2YSF" /home/orangepi/Desktop/Abrir_DMR2YSF.des
 #sed -i "14c YSF2DMR=ON" /home/orangepi/status.ini
 
 cd /home/orangepi/DMR2YSF
+xterm -geometry 88x6+1274+665 -bg black -fg yellow -fa ‘verdana’ -fs 9x -T CONSOLA_DMR2YSF -e ./DMR2YSF DMR2YSF.ini &
 
-sudo mate-terminal -x ./DMR2YSF DMR2YSF.ini & 
 cd /home/orangepi/MMDVMHost
-sudo mate-terminal -x ./MMDVMHost MMDVMDMR2YSF.ini &
+xterm -geometry 88x9+1274+787 -bg black -fg yellow -fa ‘verdana’ -fs 9x -T CONSOLA_MMDVMDMR2YSF -e ./DMR2YSF MMDVMDMR2YSF.ini &
 cd /home/orangepi/YSFClients/YSFGateway
 sudo mate-terminal -x ./YSFGateway YSFGateway.ini
