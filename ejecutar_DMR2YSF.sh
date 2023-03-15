@@ -8,8 +8,8 @@ cd /home/orangepi/DMR2YSF
 xterm -geometry 88x6+1274+665 -bg black -fg yellow -fa ‘verdana’ -fs 9x -T CONSOLA_DMR2YSF -e ./DMR2YSF DMR2YSF.ini &
 
 cd /home/orangepi/MMDVMHost
-xterm -geometry 88x9+1274+787 -bg black -fg yellow -fa ‘verdana’ -fs 9x -T CONSOLA_MMDVMDMR2YSF -e ./DMR2YSF MMDVMDMR2YSF.ini &
+xterm -geometry 88x6+1274+787 -bg black -fg yellow -fa ‘verdana’ -fs 9x -T CONSOLA_MMDVMDMR2YSF -e ./DMR2YSF MMDVMDMR2YSF.ini &
 
 cd /home/orangepi/YSFClients/YSFGateway
 xterm -geometry 88x9+1274+987 -bg black -fg yellow -fa ‘verdana’ -fs 9x -T CONSOLA_YSFGATEWAY -e ./YSFGateway YSFGateway.ini
-#sudo mate-terminal -x ./YSFGateway YSFGateway.ini
+
