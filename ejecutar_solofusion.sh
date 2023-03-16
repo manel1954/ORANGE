@@ -13,12 +13,10 @@ sed -i "7c Icon=/home/orangepi/ORANGE/SOLO_YSF_ON.png" /home/orangepi/Desktop/Ab
 sed -i "11c Name[es_ES]=Cerrar solo FUSION" /home/orangepi/Desktop/AbrirsoloYSF.desktop
 
 sed -i "12c SOLOFUSION=ON" /home/orangepi/status.ini
-echo "\33[38;5;138m"
+
 cd /home/orangepi/YSFClients/YSFGateway
-echo "\33[38;5;138m"
 mate-terminal --geometry 101x11+1277+665 --title=YSFGateway -x ./YSFGateway YSFGateway.ini & 
-echo "\33[38;5;138m"
+
 cd /home/orangepi/MMDVMHost
-echo "\33[38;5;138m"
 mate-terminal --geometry 101x16+1277+880 --title=MMDVMFUSION -x sudo ./MMDVMFUSION MMDVMFUSION.ini
 
