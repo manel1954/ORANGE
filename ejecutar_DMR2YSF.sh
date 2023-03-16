@@ -12,4 +12,3 @@ mate-terminal --geometry 101x8+1277+797 --title=MMDVMDMR2YSF -x ./DMR2YSF MMDVMD
 
 cd /home/orangepi/YSFClients/YSFGateway
 mate-terminal --geometry 101x9+1277+987 --title=YSFGATEWAY -x ./YSFGateway YSFGateway.ini
-
