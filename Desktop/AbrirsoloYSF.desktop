@@ -6,6 +6,6 @@ Comment=
 Exec=sh ejecutar_solofusion.sh
 Icon=/home/orangepi/ORANGE/SOLO_YSF.png
 Path=/home/orangepi/ORANGE
-Terminal=true
+Terminal=false
 StartupNotify=false
 Name[es_ES]=Abrir solo FUSION
