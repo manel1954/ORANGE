@@ -8,3 +8,4 @@ sed -i "12c SOLOFUSION=OFF" /home/orangepi/status.ini
 
 sudo killall MMDVMFUSION
 sudo killall YSFGateway
+
