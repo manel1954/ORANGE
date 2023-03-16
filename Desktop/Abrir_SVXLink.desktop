@@ -3,7 +3,7 @@ Version=1.0
 Type=Application
 Name=Abrir Svxlink
 Comment=
-Exec=mate-terminal --geometry=80x20 -x sh ejecutar_svxlink_05.sh
+Exec=mate-terminal --geometry 74x18+696+50 --title=SVXLINK -x sh ejecutar_svxlink_05.sh
 Icon=/home/orangepi/ORANGE/DMRPLUS_EDITOR.png
 Path=/home/orangepi/ORANGE
 Terminal=false
