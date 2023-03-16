@@ -8,4 +8,4 @@ Path=/home/orangepi/ORANGE
 Terminal=false
 Name[es_ES]=MENÚ EXTRA
 StartupNotify=false
-Exec=mate-terminal --geometry 75x18+700+0 --title=MENU_EXTRA -x sh menu_extra_05.sh
+Exec=mate-terminal --geometry 74x18+700+3 --title=MENU_EXTRA -x sh menu_extra_05.sh
