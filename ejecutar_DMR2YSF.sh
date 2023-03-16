@@ -5,11 +5,11 @@ sed -i "7c Icon=/home/orangepi/ORANGE/DMR2YSF_ON.png" /home/orangepi/Desktop/Abr
 sed -i "10c Name[es_ES]=Cerrar DMR2YSF" /home/orangepi/Desktop/Abrir_DMR2YSF.desktop
 
 cd /home/orangepi/DMR2YSF
-mate-terminal --geometry 101x8+1164+665 --title=DMR2YSF -x ./DMR2YSF DMR2YSF.ini &
+mate-terminal --geometry 101x8+1271+665 --title=DMR2YSF -x ./DMR2YSF DMR2YSF.ini &
 
 cd /home/orangepi/MMDVMHost
-mate-terminal --geometry 101x8+1270+795 --title=MMDVMDMR2YSF -x ./DMR2YSF MMDVMDMR2YSF.ini &
+mate-terminal --geometry 101x8+1272+796 --title=MMDVMDMR2YSF -x ./DMR2YSF MMDVMDMR2YSF.ini &
 
 cd /home/orangepi/YSFClients/YSFGateway
-mate-terminal --geometry 101x9+1266+987 --title=YSFGATEWAY -x ./YSFGateway YSFGateway.ini
+mate-terminal --geometry 101x9+1273+987 --title=YSFGATEWAY -x ./YSFGateway YSFGateway.ini
 
