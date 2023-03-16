@@ -3,7 +3,7 @@ Version=1.0
 Type=Application
 Name=Abrir Radio
 Comment=
-Exec=mate-terminal -x sh ejecutar_mmdvm_05.sh
+Exec=mate-terminal --geometry 104x16+1151+880 --title=RADIO -x sh ejecutar_mmdvm_05.sh
 Icon=/home/orangepi/ORANGE/MMDVM.png
 Path=/home/orangepi/ORANGE
 Terminal=false
