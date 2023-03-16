@@ -3,7 +3,7 @@ Version=1.0
 Type=Application
 Name=AbrirsoloYSF
 Comment=
-Exec=mate-terminal --geometry 104x16+1151+880 --title=SOLODSTAR -x sh ejecutar_solofusion.sh
+Exec=mate-terminal --geometry 104x16+1151+880 --title=SOLOFUSION -x sh ejecutar_solofusion.sh
 Icon=/home/orangepi/ORANGE/SOLO_YSF.png
 Path=/home/orangepi/ORANGE
 Terminal=false
