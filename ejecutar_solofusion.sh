@@ -9,8 +9,6 @@ sed -i "12c SOLOFUSION=ON" /home/orangepi/status.ini
 cd /home/orangepi/YSFClients/YSFGateway
 sudo mate-terminal -x ./YSFGateway YSFGateway.ini & cd /home/orangepi/MMDVMHost
 
-sudo ./MMDVMFUSION MMDVMFUSION.ini
+mate-terminal --geometry 104x16+1151+880 --title=SOLOFUSION -x sudo ./MMDVMFUSION MMDVMFUSION.ini
 
 
-
-sed -i "6c Exec=mate-terminal --geometry 104x16+1151+880 --title=SOLODSTAR -x sh ejecutar_solodstar.sh" /home/orangepi/Desktop/AbrirsoloDstar.desktop
