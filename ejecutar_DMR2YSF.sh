@@ -8,8 +8,8 @@ cd /home/orangepi/DMR2YSF
 mate-terminal --geometry 101x8+1277+665 --title=DMR2YSF -x ./DMR2YSF DMR2YSF.ini &
 
 cd /home/orangepi/MMDVMHost
-mate-terminal --geometry 101x8+1275+797 --title=MMDVMDMR2YSF -x ./DMR2YSF MMDVMDMR2YSF.ini &
+mate-terminal --geometry 101x8+1277+797 --title=MMDVMDMR2YSF -x ./DMR2YSF MMDVMDMR2YSF.ini &
 
 cd /home/orangepi/YSFClients/YSFGateway
-mate-terminal --geometry 101x9+1276+987 --title=YSFGATEWAY -x ./YSFGateway YSFGateway.ini
+mate-terminal --geometry 101x9+1277+987 --title=YSFGATEWAY -x ./YSFGateway YSFGateway.ini
 
