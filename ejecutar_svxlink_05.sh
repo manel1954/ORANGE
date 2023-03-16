@@ -14,5 +14,5 @@ sed -i "4c Name[es_ES]=Cerrar SVXLINK" /home/orangepi/Desktop/Abrir_SVXLink.desk
 
 sed -i "8c SVXLINK=ON" /home/orangepi/status.ini
 
-echo "${AMARILLO}"
+echo "{$CIAN}"
 sudo svxlink
