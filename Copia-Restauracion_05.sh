@@ -48,8 +48,8 @@ clear
             #===============================================
 
 
-match1=$(awk "NR==2" /home/orangepi/info.ini)
-sed -i "1c $match1" /home/orangepi/info.ini
+#match1=$(awk "NR==2" /home/orangepi/info.ini)
+#sed -i "1c $match1" /home/orangepi/info.ini
             sudo chmod +x -R /home/orangepi/Downloads
             cd /home/orangepi/MMDVMHost
             sudo cp -f TODOS_LOS_INIS.ini /home/orangepi/Downloads
