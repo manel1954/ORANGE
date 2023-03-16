@@ -14,7 +14,7 @@ sed -i "12c SOLOFUSION=ON" /home/orangepi/status.ini
 echo "{$MARRON}"
 cd /home/orangepi/YSFClients/YSFGateway
 mate-terminal --geometry 101x11+1277+665 --title=YSFGateway -x ./YSFGateway YSFGateway.ini & 
-
+echo "{$MARRON}"
 cd /home/orangepi/MMDVMHost
 mate-terminal --geometry 101x16+1277+880 --title=MMDVMFUSION -x sudo ./MMDVMFUSION MMDVMFUSION.ini
 
