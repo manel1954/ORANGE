@@ -15,7 +15,7 @@ sed -i "13c SOLODSTAR=ON" /home/orangepi/status.ini
 cd /home/orangepi/MMDVMHost
 echo "{$VERDE}"
 
-./MMDVMDSTAR MMDVMDSTAR.ini & 
+sudo ./MMDVMDSTAR MMDVMDSTAR.ini & 
 ircddbgateway -gui
 
 sed -i "6c Exec=mate-terminal -x sh -c 'cd /home/orangepi/ORANGE/;sh ejecutar_solodstar.sh'" /home/orangepi/Desktop/AbrirsoloDstar.desktop
