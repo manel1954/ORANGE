@@ -3,7 +3,7 @@ Version=1.0
 Type=Application
 Name=AbrirsoloDstar
 Comment=
-Exec=mate-terminal -x sh -c "cd /home/orangepi/ORANGE/;sh ejecutar_solodstar.sh"
+Exec=mate-terminal --geometry 104x16+1151+880 --title=SOLODSTAR -x sh ejecutar_solodstar.sh
 Icon=/home/orangepi/ORANGE/SOLO_D-STAR.png
 Path=/home/orangepi/ORANGE
 Terminal=false
