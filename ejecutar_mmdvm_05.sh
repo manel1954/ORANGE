@@ -16,13 +16,13 @@ sed -i "5c MMDVM=ON" /home/orangepi/status.ini
 
 cd /home/orangepi/MMDVMHost
 
-echo "{AMARILLO}"
+
 clear
 echo "***********************************************"
 echo "*                 RADIO                       * "
 echo "***********************************************"
 #sleep 2
-
+echo "{AMARILLO}"
 sudo ./MMDVMRADIO MMDVM.ini
 
 sed -i "6c Exec=mate-terminal --geometry 104x16+1151+880 --title=RADIO -x sh ejecutar_mmdvm_05.sh" /home/orangepi/Desktop/MMDVM.desktop
