@@ -1,13 +1,5 @@
 #!/bin/bash
 
-ROJO="\033[1;31m"
-VERDE="\033[1;32m"
-BLANCO="\033[1;37m"
-AMARILLO="\033[1;33m"
-CIAN="\033[1;36m"
-GRIS="\033[0m"
-
-
 sed -i "6c Exec=sh cerrar_ambe_server.sh" /home/orangepi/Desktop/Abrir_ambe_server.desktop
 sed -i "7c Icon=/home/orangepi/ORANGE/AMBER_SERVER_ON.png" /home/orangepi/Desktop/Abrir_ambe_server.desktop
 sed -i "10c Name[es_ES]=Cerrar AMBE SERVER" /home/orangepi/Desktop/Abrir_ambe_server.desktop
@@ -20,8 +12,7 @@ puerto_modem=$(awk "NR==2" /home/orangepi/ambe_server.ini)
 baut_rate=$(awk "NR==3" /home/orangepi/ambe_server.ini)
 cd /home/orangepi/AMBEServer
 sudo killall AMBEserver
-sleep 1
-echo "{$VERDE}"
+#sleep 3
 mate-terminal --geometry 74x11+730+275 -x sudo ./AMBEserver -p $puerto_router -i $puerto_modem -s $baut_rate
 
 sed -i "6c Exec=sh ejecutar_ambe_server.sh" /home/orangepi/Desktop/Abrir_ambe_server.desktop
