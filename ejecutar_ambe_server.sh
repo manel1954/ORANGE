@@ -11,7 +11,6 @@ puerto_modem=$(awk "NR==2" /home/orangepi/ambe_server.ini)
 baut_rate=$(awk "NR==3" /home/orangepi/ambe_server.ini)
 cd /home/orangepi/AMBEServer
 sudo killall AMBEserver
-sleep 5
 mate-terminal --geometry 74x18+696+50 -x ./AMBEserver -p $puerto_router -i $puerto_modem -s $baut_rate
 
 sed -i "6cExec=sh ejecutar_ambe_server.sh" /home/orangepi/Desktop/Abrir_ambe_server.desktop
