@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i "6cExec=mate-terminal -x sh cerrar_ambe_server.sh" /home/orangepi/Desktop/Abrir_ambe_server.desktop
+sed -i "6cExec=sh cerrar_ambe_server.sh" /home/orangepi/Desktop/Abrir_ambe_server.desktop
 sed -i "7c Icon=/home/orangepi/ORANGE/AMBER_SERVER_ON.png" /home/orangepi/Desktop/Abrir_ambe_server.desktop
 sed -i "10c Name[es_ES]=Cerrar AMBE SERVER" /home/orangepi/Desktop/Abrir_ambe_server.desktop
 
@@ -14,7 +14,7 @@ sudo killall AMBEserver
 sleep 5
 mate-terminal --geometry 74x18+696+50 -x ./AMBEserver -p $puerto_router -i $puerto_modem -s $baut_rate
 
-sed -i "6cExec=mate-terminal -x sh ejecutar_ambe_server.sh" /home/orangepi/Desktop/Abrir_ambe_server.desktop
+sed -i "6cExec=sh ejecutar_ambe_server.sh" /home/orangepi/Desktop/Abrir_ambe_server.desktop
 sed -i "7c Icon=/home/orangepi/ORANGE/AMBE_SERVER.png" /home/orangepi/Desktop/Abrir_ambe_server.desktop
 sed -i "10c Name[es_ES]=Abrir AMBE SERVER" /home/orangepi/Desktop/Abrir_ambe_server.desktop
 
