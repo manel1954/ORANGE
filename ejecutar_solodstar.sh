@@ -16,7 +16,7 @@ cd /home/orangepi/MMDVMHost
 echo "{$VERDE}"
 
 sudo ./MMDVMDSTAR MMDVMDSTAR.ini & 
-sudo ircddbgateway -gui
+ircddbgateway -gui
 
 sed -i "6c Exec=mate-terminal --geometry 104x16+1151+880 --title=SOLODSTAR -x sh ejecutar_solodstar.sh" /home/orangepi/Desktop/AbrirsoloDstar.desktop
 sed -i "7c Icon=/home/orangepi/ORANGE/SOLO_D-STAR.png" /home/orangepi/Desktop/AbrirsoloDstar.desktop
