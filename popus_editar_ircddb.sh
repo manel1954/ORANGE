@@ -25,7 +25,7 @@ echo "   ***********************************************************************
 echo ""
 
 #abre el editor ircDDB
-sudo ircddbgatewayconfig
+ircddbgatewayconfig
 
 
 
