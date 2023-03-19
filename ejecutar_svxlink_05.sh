@@ -17,6 +17,6 @@ sed -i "8c SVXLINK=ON" /home/orangepi/status.ini
 echo "{$CIAN}"
 sudo svxlink
 
-sed -i "6c Exec=sh ejecutar_svxlink_05.sh" /home/orangepi/Desktop/Abrir_SVXLink.desktop
+sed -i "6c Exec=mate-terminal --geometry 74x23+696+50 --title=SVXLINK -x sh ejecutar_svxlink_05.sh" /home/orangepi/Desktop/Abrir_SVXLink.desktop
 sed -i "7c Icon=/home/orangepi/ORANGE/DMRPLUS_EDITOR.png" /home/orangepi/Desktop/Abrir_SVXLink.desktop
 sed -i "4c Name[es_ES]=Abrir SVXLINK" /home/orangepi/Desktop/Abrir_SVXLink.desktop
