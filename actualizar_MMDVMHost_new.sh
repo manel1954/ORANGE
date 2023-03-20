@@ -1,7 +1,7 @@
 ﻿#!/bin/bash
-                    cd /home/pi
-                    #sudo cp -R MMDVMHost /home/pi/.local/ 
-                    sudo rm -r /home/pi/MMDVMHost
+                    cd /home/orangepi
+                    #sudo cp -R MMDVMHost /home/orangepi/.local/ 
+                    sudo rm -r /home/orangepi/MMDVMHost
                     sudo apt-get install build-essential git-core libi2c-dev i2c-tools lm-sensors
                     git clone https://github.com/g4klx/MMDVMHost
                     cd MMDVMHost
@@ -10,32 +10,32 @@
                     sudo make clean
                     sudo make
                                     
-                    cd /home/pi/MMDVMHost
+                    cd /home/orangepi/MMDVMHost
 
                     HOY=$(date +%Y%m%d)
                     FIJA="const char* VERSION = "\"
-                    PI="ADER108"\"
+                    PI="ORANGE"\"
                     HOY1=$HOY$PI
                     PUNTO=";"   
                     
-                    sed -i "22c $FIJA$HOY1$PUNTO" /home/pi/MMDVMHost/Version.h
+                    sed -i "22c $FIJA$HOY1$PUNTO" /home/orangepi/MMDVMHost/Version.h
 
                     make clean
                     make -f Makefile.Pi.OLED
 
                     #Instala la secion [NextionDriver] en todos los .ini y todas sus memorias
-                    cd /home/pi/NextionDriverInstaller
-                    sudo ./NextionDriver_ConvertConfig /home/pi/MMDVMHost/MMDVM.ini
+                    cd /home/orangepi/NextionDriverInstaller
+                    sudo ./NextionDriver_ConvertConfig /home/orangepi/MMDVMHost/MMDVM.ini
                     sleep 2                  
                     
-                    sed -i "5c Duplex=0" /home/pi/MMDVMHost/MMDVM.ini
-                    sed -i "52c # UARTSpeed=460800" /home/pi/MMDVMHost/MMDVM.ini
-                    sed -i "229c Type=Direct" /home/pi/MMDVMHost/MMDVM.ini
-                    sed -i "231c # LocalPort=62032" /home/pi/MMDVMHost/MMDVM.ini
-                    sed -i "234c Password=PASSWORD" /home/pi/MMDVMHost/MMDVM.ini
+                    sed -i "5c Duplex=0" /home/orangepi/MMDVMHost/MMDVM.ini
+                    sed -i "52c # UARTSpeed=460800" /home/orangepi/MMDVMHost/MMDVM.ini
+                    sed -i "229c Type=Direct" /home/orangepi/MMDVMHost/MMDVM.ini
+                    sed -i "231c # LocalPort=62032" /home/orangepi/MMDVMHost/MMDVM.ini
+                    sed -i "234c Password=PASSWORD" /home/orangepi/MMDVMHost/MMDVM.ini
 
                     # Crea los ejecutables para estas aplicaciones 
-                    cd /home/pi/MMDVMHost
+                    cd /home/orangepi/MMDVMHost
                     cp MMDVMHost MMDVMBM
                     cp MMDVMHost MMDVMPLUS
                     cp MMDVMHost MMDVMDSTAR
@@ -93,15 +93,15 @@
                   
                     cp MMDVM.ini MMDVMDMRGateway.ini 
                     
-                    sed -i "52c # UARTSpeed=460800" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
-                    sed -i "229c Type=Gateway" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
-                    sed -i "231c LocalPort=62032" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+                    sed -i "52c # UARTSpeed=460800" /home/orangepi/MMDVMHost/MMDVMDMRGateway.ini
+                    sed -i "229c Type=Gateway" /home/orangepi/MMDVMHost/MMDVMDMRGateway.ini
+                    sed -i "231c LocalPort=62032" /home/orangepi/MMDVMHost/MMDVMDMRGateway.ini
                     
-                    sed -i "52c # UARTSpeed=460800" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
-                    sed -i "231c LocalPort=62032" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
-                    sed -i "231c LocalPort=62032" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
-                    sed -i "231c LocalPort=62037" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+                    sed -i "52c # UARTSpeed=460800" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini
+                    sed -i "231c LocalPort=62032" /home/orangepi/MMDVMHost/MMDVMDMR2YSF.ini
+                    sed -i "231c LocalPort=62032" /home/orangepi/MMDVMHost/MMDVMDMR2NXDN.ini
+                    sed -i "231c LocalPort=62037" /home/orangepi/MMDVMHost/MMDVMDMR2M17.ini
 
-                    sudo chmod 777 -R /home/pi/MMDVMHost
+                    sudo chmod 777 -R /home/orangepi/MMDVMHost
                 
                     exit;
